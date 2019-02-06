@@ -1,7 +1,7 @@
 /*
   General Scala attributes
  */
-scalaVersion := "2.12.1"
+scalaVersion := "2.12.8"
 
 /*
   General project attributes
@@ -36,3 +36,5 @@ dockerBaseImage := "openjdk:8-jre-alpine"
 
 // creates tag 'latest' as well when publishing
 dockerUpdateLatest := true
+
+daemonUser in Docker := "root"
